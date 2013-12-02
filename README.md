@@ -4,30 +4,11 @@ Easily integrate Zach Moazeni's [csscss](http://zmoazeni.github.io/csscss/) into
 
 ## Installation
 
-There is currently a [bug in Compass](https://github.com/chriseppstein/compass/issues/1053) that prevents external Compass commands from being registered if they're required in a project's config.rb file. So until that is resolved, you'll have to build this [custom version of Compass](https://github.com/Comcast/compass/tree/require_commands) that [adds support for command-line extensions](https://github.com/chriseppstein/compass/pull/1409):
-
-https://github.com/Comcast/compass
-
-Clone that project, then from the project root run
-
-    $ git checkout require_commands
-    $ gem build compass.gemspec
-
-Be sure to take note of the .gem filename
-
-Once that builds, you'll need to first uninstall your existing Compass gem
-
-    $ gem uninstall compass
-
-And then install your locally-built version of Compass
-
-    $ gem install compass-0.13.alpha.7.<hash>.gem
-
-Be sure to use the actual filename that the build command created.
-
-Once that is installed, you can safely install compass-csscss:
+Assuming ruby is installed on your system:
 
     $ gem install compass-csscss
+
+Note that this requires at least version 1.0.0.alpha.13 of [Compass](http://compass-style.org/) to work properly.
 
 ## Usage
 
