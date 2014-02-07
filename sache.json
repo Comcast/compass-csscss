@@ -1,0 +1,5 @@
+{
+  "name": "compass-csscss",
+  "description": "Easily integrate csscss into your Compass projects by providing a 'compass csscss' command line option.",
+  "tags": ["compass", "cli", "csscss", "dry", "code-quality"]
+}
